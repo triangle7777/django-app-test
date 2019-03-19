@@ -11,7 +11,7 @@ RUN pip install -r /requirements
 
 RUN mkdir /app
 WORKDIR /app
-COPY . .
+COPY ./app /app
 
 RUN adduser -D user
 USER user
